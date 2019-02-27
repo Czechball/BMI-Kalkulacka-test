@@ -10,11 +10,27 @@ using System.Windows.Forms;
 
 namespace BMI_Test
 {
-    public partial class Form1 : Form
+
+    public partial class mainWindow : Form
     {
-        public Form1()
+        public mainWindow()
         {
             InitializeComponent();
+        }
+
+        private void peopleLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void peopleAddButton_Click(object sender, EventArgs e)
+        {
+            personAddWindow add = new personAddWindow();
+            DialogResult result = add.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+
+            }
         }
     }
 }
